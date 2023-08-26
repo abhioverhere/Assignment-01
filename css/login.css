@@ -1,5 +1,13 @@
 /* navbar-accounts-page */
 
+#signup{
+    text-decoration: none;   
+    color: #000000;
+}
+#signup:hover{
+    color: #00e257;
+}
+
 .navbar-nav .nav-link{
     background-color: #57575787;
     border-radius: 20px;

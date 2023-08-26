@@ -31,13 +31,7 @@
 /* /navbar */
 
 /* body */
-#signup{
-    text-decoration: none;   
-    color: #000000;
-}
-#signup:hover{
-    color: #00e257;
-}
+
 .signupForm{
     color: rgb(0, 0, 0);
     margin: 5em;
