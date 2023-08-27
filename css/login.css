@@ -16,19 +16,16 @@
     padding-right: 3px;
     text-align: center;
 }
-
 .navbar-nav .nav-link:hover{
     background-color: #11111187;
     color: white;
     transition: ease-in-out 0.25s;
 }
-
 @media screen and (max-width: 768px) {
     .navbar {
         background-color: rgba(87, 87, 87, 0.7); /* Adjust the color and opacity as needed */
     }
 }
-
 /* /navbar */
 
 /* login-menu */

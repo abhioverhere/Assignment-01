@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 /* navbar-general */
 .navbar-nav .nav-link{
     width: 7em;
@@ -12,7 +11,6 @@
     padding-right: 3px;
     text-align: center;
 }
-
 .navbar-nav .nav-link:hover{
     background-color: #11111187;
     border-radius: 20px;

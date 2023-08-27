@@ -10,24 +10,20 @@
     padding-right: 3px;
     text-align: center;
 }
-
 .navbar-nav .nav-link:hover{
     background-color: #11111187;
     color: white;
     transition: ease-in-out 0.25s;
 }
-
 @media screen and (max-width: 768px) {
     .navbar {
         background-color: rgba(87, 87, 87, 0.7); /* Adjust the color and opacity as needed */
     }
 }
-
 #logoimg{
     height: 2.5pc;
     width: auto;
 }
-
 /* /navbar */
 
 /* body */
@@ -45,7 +41,6 @@
 .fa-brands{
     height: 45px;
 }
-
 .sign-gna{
     display: flex;
     flex-direction: column;
@@ -53,31 +48,25 @@
     justify-content: center;
     
     border-radius: 5px;
-    box-shadow: 0 1px 4px;
-    
+    box-shadow: 0 1px 4px;    
 }
-
 .sign-gna a{
     text-decoration: none;
     color: #000000;
 }
-
 .sign-gna {
     width: 90%;
 }
-
 .sign-gna:hover {
     transform: scale(1.05) translateY(-0.1px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 .line {
     border: none;
     height: 1px; 
     background-color: #000000;
     margin: 10px 0;
 }
-
 .custom-btn {
     display: flex;
     align-items: center;
@@ -92,7 +81,6 @@
     padding: 10px;
     width: 300px; 
 }
-
 .btn-hover-g:hover {
     background-image: linear-gradient(to right, #0091ff, #009fff, #00abff, #00b7ff, #00c2ff, #00cdff, #00d7fc, #00e0f8, #00ebee, #00f4d4, #00fbad, #00ff79);
     transform: scale(1.05);
@@ -103,14 +91,11 @@
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-
 .custom-btn i {
     font-size: 2rem; 
     color: #000000;
     margin-right: 5px; 
 }
-
 .custom-btn span {
     text-align: center; 
 }
