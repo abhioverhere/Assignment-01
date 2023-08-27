@@ -48,7 +48,62 @@
     border: none;
     background-color: #fff;
     border-top: 2px solid #333;
+}
+.showcase{
+    background-color: #fff;
+    margin-top: 25px;
+    margin-left: 0px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+.showcase-img{
+    border: transparent;
+}
+.showcase-card{
+    height: 5em;
+    width: auto;
+    margin-top: 20px;
     
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.29s;
+    padding: 0 25px;
+}
+.overlay:hover{
+    opacity: 1;
+} 
+.overlay:hover > *{
+    transform: translateY(0);
+} 
+.overlay > *{
+    transition: transform 0.29s;
+    transform: scale(1.05) translateY(-0.1px);
+}
+.overlay-blur{
+    backdrop-filter: blur(5px);
+    border: transparent;
+} 
+.overlay-clr{
+    background: hsl(168, 100%, 29%,0.6);
+}
+.hdig2{
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 35px;
 }
 
 /* footer */

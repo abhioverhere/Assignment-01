@@ -1,5 +1,4 @@
-/* navbar-accounts-page */
-
+/* navbar */
 #signup{
     text-decoration: none;   
     color: #000000;
@@ -7,7 +6,6 @@
 #signup:hover{
     color: #00e257;
 }
-
 .navbar-nav .nav-link{
     background-color: #57575787;
     border-radius: 20px;
@@ -31,7 +29,7 @@
     }
 }
 
-/* /navbar-accounts-page */
+/* /navbar */
 
 /* login-menu */
 .logger{
@@ -59,7 +57,7 @@
     padding: 5px;
     justify-content: center;
 }
-.hovereff:hover {
+.hovereff:hover{
     transform: scale(1.05) translateY(-0.1px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
