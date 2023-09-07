@@ -34,34 +34,40 @@
         <div class="container">
             <div class="signupForm">
                 <h1 style="padding: 10px 0;">Sign Up</h1>
-                <form class="row g-3 signupForm">
+                <form class="row g-3 signupForm" action="./success.html">
                     <div class="col-md-4">
-                        <label for="inputname" class="form-label">First Name</label>
-                        <input type="text" class="form-control" placeholder="First name">
+                        <label for="inputName1" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name" id="inputName1" autocomplete="given-name">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputname" class="form-label">Second Name (Optional)</label>
-                        <input type="text" class="form-control" placeholder="Second name">
+                        <label for="inputName2" class="form-label">Second Name (Optional)</label>
+                        <input type="text" class="form-control" placeholder="Second name" id="inputName2" autocomplete="additional-name">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputname" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <label for="inputName3" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name" id="inputName3" autocomplete="family-name">
                     </div>            
                     <div class="col-md-6">
-                        <label for="inputnumber" class="form-label">Phone number</label>
-                        <input type="text" class="form-control">
+                        <label for="inputNum" class="form-label">Phone number</label>
+                        <input type="text" class="form-control" id="inputNum" onblur="validateNum()" autocomplete="tel">
+                        <span id="numConfirm"></span>
                     </div>            
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">E-mail</label>
-                        <input type="text" class="form-control">
+                        <label for="inputEmail" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="inputEmail" onblur="validateMail()" autocomplete="email">
+                        <span id="emailConfirm"></span>
                     </div>           
                     <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" placeholder="Enter a password">
+                        <label for="inputPass" class="form-label">Password</label>
+                        <div id="passStrengthDisplay">
+                            <input type="password" class="form-control" placeholder="Enter a password" id="inputPass" onblur="validatePass()" onclick="resetPassBar()">
+                        </div>
+                        <span id="passCheck"></span>
                     </div>
                     <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Confirm your password</label>
-                        <input type="password" class="form-control" placeholder="Enter a password">
+                        <label for="inputPassc" class="form-label">Confirm your password</label>
+                        <input type="password" class="form-control" placeholder="Enter a password" id="inputPassc" onblur="confirmPass()">
+                        <span id="passConfirm"></span>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
@@ -74,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col col-lg-4">
-                        <button type="submit" class="btn btn-dark">Sign up</button>
+                        <button type="submit" class="btn btn-dark" id="submitButton" onclick="formCompletionCheck()">Sign up</button>
                     </div>
                 </form>
                 <hr class="line">
@@ -96,6 +102,8 @@
         </div>
             <!-- /SIGN UP -->
 
+    
+    <script src="./signup.js"></script>
     <script src="https://kit.fontawesome.com/e5b3b057b8.js" crossorigin="anonymous"></script>
     <!-- JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
