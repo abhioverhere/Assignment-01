@@ -67,6 +67,23 @@
     background-color: #000000;
     margin: 10px 0;
 }
+/* forms */
+#passStrengthDisplay{    
+    border-radius: 12px;
+}
+.weakPassword{
+    border-bottom: 2px solid red;
+}  
+.mediumPassword{
+    border-bottom: 2px solid orange;  
+}  
+.strongPassword{
+    border-bottom: 2px solid limegreen;
+} 
+.veryStrongPassword{
+    border-bottom: 2px solid green;
+}
+/* forms */
 .custom-btn {
     display: flex;
     align-items: center;
